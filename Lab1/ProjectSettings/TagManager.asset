@@ -6,6 +6,7 @@ TagManager:
   tags:
   - chest
   - Fire
+  - nextLevelPoint
   layers:
   - Default
   - TransparentFX

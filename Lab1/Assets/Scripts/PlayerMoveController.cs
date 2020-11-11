@@ -46,9 +46,9 @@ public class PlayerMoveController : MonoBehaviour
         whatIsGround = LayerMask.GetMask("Ground Platforms");
         animator = gameObject.GetComponent<Animator>();
 
-        animator.SetBool(WalkingAnimation, false);
-        animator.SetBool(JumpAnimation, false);
-        animator.SetBool(CrouchingAnimation, false);
+        animator.SetBool("walking", false);
+        animator.SetBool("jump", false);
+        animator.SetBool("crouching", false);
     }
 
     void Update()
@@ -62,7 +62,6 @@ public class PlayerMoveController : MonoBehaviour
             float move = Input.GetAxis("Horizontal") * inversionFactor;
             int moveCeiling = (int) Math.Ceiling(move) * inversionFactor;
             int moveFloor = (int) Math.Floor(Math.Abs(move)) * inversionFactor;
-            Debug.Log($"{move} {moveFloor}");
             if (animator.GetBool(CrouchingAnimation) == false)
             {
                 rb.velocity =

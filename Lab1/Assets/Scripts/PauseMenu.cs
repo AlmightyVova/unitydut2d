@@ -40,6 +40,8 @@ public class PauseMenu : MonoBehaviour
     public void LevelSelect()
     {
         Time.timeScale = 1f;
+        pauseMenuUI.SetActive(false);
+        _isGamePaused = false;
         SceneManager.LoadScene("LevelSelect");
     }
 
