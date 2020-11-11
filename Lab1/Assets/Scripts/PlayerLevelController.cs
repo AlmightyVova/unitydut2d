@@ -12,7 +12,7 @@ public class PlayerLevelController : MonoBehaviour
         SceneManager.LoadScene(nextLevel);
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log("log smth");
         if (other.gameObject.CompareTag("nextLevelPoint"))
