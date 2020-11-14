@@ -7,32 +7,38 @@ public class HealthSystem
 {
     private readonly int maxHealth;
     private int health;
+    private int maxShield;
+    private int shield;
 
-    public HealthSystem(int health)
+    public int Health => health;
+    public int Shield => shield;
+
+    public HealthSystem()
     {
-        this.maxHealth = health;
-        this.health = maxHealth;
+        maxHealth = 1;
+        health = maxHealth;
+        maxShield = 1;
+        shield = 0;
     }
 
-    public int GetMaxHealth()
+    public void Damage()
     {
-        return maxHealth;
+        if (shield == 0)
+        {
+            health = 0;
+            if (health < 0) health = 0;
+        }
+        else
+        {
+            shield = 0;
+        }
     }
 
-    public int GetHealth()
+    public void HealShield()
     {
-        return health;
-    }
-
-    public void Damage(int damageAmount)
-    {
-        health -= damageAmount;
-        if (health < 0) health = 0;
-    }
-
-    public void Heal(int healAmount)
-    {
-        health += healAmount;
-        if (health > maxHealth) health = maxHealth;
+        if (shield == 0)
+        {
+            shield = 1;
+        }
     }
 }

@@ -47,7 +47,7 @@ public class PlayerMoveController : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
 
         animator.SetBool("walking", false);
-        animator.SetBool("jump", false);
+        // animator.SetBool("jump", false);
         animator.SetBool("crouching", false);
     }
 
