@@ -4,11 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - chest
   - Fire
   - nextLevelPoint
   - Coins
   - Potion
+  - Enemy
+  - Obstacle
+  - SpikyEnemy
+  - Deadly Obstacle
   layers:
   - Default
   - TransparentFX
@@ -19,7 +22,7 @@ TagManager:
   - 
   - 
   - Ground Platforms
-  - 
+  - Enemies
   - 
   - 
   - 

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9500000}
   - component: {fileID: 8302204494256331919}
   - component: {fileID: 2717215623317744957}
+  - component: {fileID: 5873180858892196706}
   m_Layer: 0
   m_Name: Knight1_Sword
   m_TagString: Untagged
@@ -175,3 +176,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   frontCheck: {fileID: 0}
+--- !u!114 &5873180858892196706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23871ff9c8b430999af2edd1015170b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToUnlock: 0
